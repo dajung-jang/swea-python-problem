@@ -30,4 +30,18 @@ print(result)
 # sep 사용
 print(*arr, sep='')
 
+# ---------------------------------------------------
+
 # 강사님 풀이
+n = int(input())
+numbers = list(map(int, input().split()))
+
+# 숫자들 오름차순 정렬
+numbers.sort()
+
+# 정렬된 숫자들을 이어붇이기('+')
+result = ''
+for num in numbers:     # iterator 방식 순회
+    result += str(num)  # 문자열로 바꾼다
+
+print(result)

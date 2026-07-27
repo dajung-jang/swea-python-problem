@@ -26,3 +26,22 @@ for num in numbers:
 if not is_duplicate and is_in_range and len(numbers) == 6:
     print("VALID")
 else: print("INVALID")
+
+# ------------------------------------------------------
+# 강사님 풀이
+
+numbers = list(map(int, input().split()))
+
+# 우선순위 1순위
+if len(numbers) != 6:
+    print("INVALID")
+
+else: #길이가 6 인 경우
+    lotto_set = set()
+    for num in numbers:
+        if 1 <= num <= 45:
+            lotto_set.add(num)
+    if len(lotto_set) == 6:     #로또의 숫자 개수가 6개
+        print('VALID')
+    else:                       # 로또의 숫자 개수가 6개 안될때
+        print('INVALID')

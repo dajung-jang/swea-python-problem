@@ -13,12 +13,15 @@ arr = ['ABC', '77', '-33', '-33', '125', 'ABC']
 d = dict()
 
 for i in arr:
-    d[str(i)] = 0
+    d[i] = 0
 
 for i in arr:
-    i = d[str(i)]
-    str(i) += 1
+    d[i] += 1
 
+char = input()
+
+print(d[char])
+    
 
 
 

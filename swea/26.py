@@ -13,6 +13,25 @@ Q) 학생들의 시험 점수가 딕셔너리로 주어집니다.
 items()메서드 사용
 """
 
+scores = {
+    'bogeom': 89,
+    'sangho': 100,
+    'IU': 78,
+    'sori': 76,
+    'hejun': 85
+}
+
+max_v = 0
+max_name =''
+
+for name, score in scores.items():
+    if score > max_v:
+        max_v = score
+        max_name = name
+
+print(max_name)
+
+
 # ---------------------------------------------------
 # 강사님 풀이
 

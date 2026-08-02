@@ -10,6 +10,20 @@
         BTS 3
 """
 
+arr = input().split()
+d = dict()
+
+for a in arr:
+    d[a] = 0
+
+for a in arr:
+    d[a] += 1
+
+for i in d:
+    print(i, d[i])
+
+
+
 # ------------------------------------------------------
 # 강사님 풀이
 

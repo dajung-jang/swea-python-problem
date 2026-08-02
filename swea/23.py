@@ -10,6 +10,23 @@ sort() 메서드 사용
 """
 
 N = int(input())
+
+while True:
+    arr = list(map(int, input().split()))
+    if len(arr) == N:
+        break
+    else: print('다시 입력해주세요')
+
+arr.sort()
+
+result = ''
+
+for i in arr:
+    result += str(i)
+
+print(result)
+
+N = int(input())
 while True:
     arr = list(map(int, input().split()))
 

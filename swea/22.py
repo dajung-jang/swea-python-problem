@@ -10,6 +10,30 @@ N번 이동 후 맨 앞에 있는 친구의 번호
 append() 메서드와, pop(0) 메서드 사용
 """
 arr = [1, 2, 3]
+
+while True:
+    n = int(input())
+    if n < 1 or n > 5:
+        print("1이상 5이하의 정수로 다시 입력해주세요")
+    else: break
+
+for _ in range(n):
+    i = arr.pop(0)
+    arr.append(i)
+
+result = arr[0]
+print(result)
+
+# 함수로 작성하면 이렇게
+def func(arr):
+    for _ in range(n):
+        i = arr.pop(0)
+        arr.append(i)
+    return arr
+
+print(func(arr))
+
+arr = [1, 2, 3]
 while True:
     N = int(input())
     if 1 <= N <= 5:

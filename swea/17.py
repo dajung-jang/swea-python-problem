@@ -1,3 +1,34 @@
+"""
+리스트를 입력받고,
+element 중 짝수가 하나라도 있으면 1, 없으면 0을 출력한다.
+
+arr = list(map(int, input().split()))
+
+flag = 0
+for i in arr:
+    if i % 2 == 0:
+        flag = 1
+        break
+
+print(flag)
+이 소스코드를 'flag처리' 라고 한다.
+
+Q) 이 flag 처리 코드를 flag 변수를 쓰지 않고, 함수로 바꿔보자
+힌트: for-break 대신 함수의 return 을 활용한다.
+"""
+
+arr = list(map(int, input().split()))
+
+def func(arr):
+    for i in arr:
+        if i % 2 == 0:
+            return 1
+    return 0
+
+print(func(arr)) 
+    
+
+
 #  내 풀이
 
 def has_even(arr):

@@ -7,6 +7,19 @@
 [주의사항]
 반드시 while break 문법을 사용해 주세요.
 """
+total = 0
+
+while True:
+    n = int(input())
+
+    if n == 0:
+        print(total)
+        break
+    elif n < 0:
+        print(total)
+        total = 0       # == 은 비교 연산자여서 total 이 0 으로 안바뀜(true false 만 확인함) / 대입 연산자인 = 으로 해야함
+    else:
+        total += n
 
 # 애는 숫자 받을때마다 바로바로 처리하면 되니까 굳이 list 로 받아서 값 다 가지고 있을 필요 없음
 # 숫자 받을때마다 num 에 덮어쓰고 while 문으로 확인하고 그 다음 num 에 또 덮어써지는 방식

@@ -1,3 +1,31 @@
+"""
+리스트 1개를 입력받습니다.
+
+1. 리스트의 element 중 최대값을 구합니다.
+2. 그 element 의 index 를 출력합니다.
+3. enumerate 내장함수를 사용합니다.
+"""
+
+arr = list(map(int, input().split()))
+
+max_index = 0
+max = arr[0]
+for i, j in enumerate(arr):
+    if j > max:
+        max = j
+        max_index = i
+
+print(max_index)
+
+# 내장함수 안쓰면
+
+for x in range(len(arr)):
+    if arr[x] > max:
+        max = arr[x]
+        max_index = x
+print(max_index)
+
+
 # 내 코드
 
 arr = list(map(int, input().split()))

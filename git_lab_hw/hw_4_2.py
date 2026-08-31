@@ -40,3 +40,4 @@ for book in rental_list:
         break
 
 else: print("모든 도서가 대여 가능한 상태입니다.")
+# tnwjd
